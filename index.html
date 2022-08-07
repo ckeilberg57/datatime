@@ -14,9 +14,9 @@ button { border: none; border-radius: 10px; padding: 12px 10px; text-align: cent
   <h1>Need to Schedule an Appointment, Let us help</h1>
   <hr>
   <div>
-    <h2>Need to Schedule a Working Session?</h2>
+    <h2>Schedule a Working Session?</h2>
     <input type="text" id="basicDate" placeholder="Select a Date and Time" data-input>
-    <h2>Need an Appointment Today?</h2>
+    <h2>Book an Appointment Today?</h2>
     <input type="text" id="timePicker" placeholder="Select A Time">
   </div>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
@@ -25,6 +25,12 @@ button { border: none; border-radius: 10px; padding: 12px 10px; text-align: cent
 $("#basicDate").flatpickr({
     enableTime: true,
     dateFormat: "F, d Y H:i"
+});
+$("#timePicker").flatpickr({
+    enableTime: true,
+    noCalendar: true,
+    time_24hr: true,
+    dateFormat: "H:i",
 });
   </script>
 </body>
