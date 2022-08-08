@@ -22,7 +22,6 @@ button { border: none; border-radius: 10px; padding: 12px 10px; text-align: cent
     <input type="text" id="timePicker" placeholder="Select A Time">
     <button onclick="myFunction()">Book an Appointment</button>
     <p id="appointment"></p>
-      <p>https://manu-demo.ck-collab-engtest.com/webapp/#/?conference=manu8675309&name=John%20Doe&callType=video&role=guest.</p>
   </div>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/flatpickr/4.2.3/flatpickr.js"></script>
@@ -40,7 +39,7 @@ $("#timePicker").flatpickr({
   </script>
   <script>
 function myFunction() {
-  document.getElementById("appointment").innerHTML = "Your Appointment is Booked!";
+  document.getElementById("appointment").innerHTML = "Your Appointment is Booked!<p>https://manu-demo.ck-collab-engtest.com/webapp/#/?conference=manu8675309&name=John%20Doe&callType=video&role=guest</p>";
 }
 </script>
 </body>
