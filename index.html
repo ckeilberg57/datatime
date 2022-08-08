@@ -62,10 +62,7 @@ button { border: none; border-radius: 10px; padding: 12px 10px; text-align: cent
     <button onclick="myFunction()">Schedule a Working Session</button>
     <p id="schedule"></p>
     <p></p>
-    <h2>Book an Appointment Today</h2><a class="button" href="#">Available Now!!</a>
-    <input type="text" id="timePicker" placeholder="Select A Time">
-    <button onclick="myFunction2()">Book an Appointment</button>
-    <p id="appointment"></p>
+    <h2>Urgent Request Needed?</h2><a class="button" href="#">Expert Available Now!!</a>
   </div>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/flatpickr/4.2.3/flatpickr.js"></script>
@@ -73,12 +70,6 @@ button { border: none; border-radius: 10px; padding: 12px 10px; text-align: cent
 $("#basicDate").flatpickr({
     enableTime: true,
     dateFormat: "F, d Y H:i"
-});
-$("#timePicker").flatpickr({
-    enableTime: true,
-    noCalendar: true,
-    time_24hr: true,
-    dateFormat: "H:i",
 });
   </script>
     <script>
