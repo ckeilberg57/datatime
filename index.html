@@ -5,6 +5,47 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flatpickr/4.2.3/flatpickr.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flatpickr/4.2.3/themes/dark.css">
 <style>
+  .button {
+  background-color: #004A7F;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  border: none;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-block;
+  font-family: Arial;
+  font-size: 20px;
+  padding: 5px 10px;
+  text-align: center;
+  text-decoration: none;
+  -webkit-animation: glowing 1500ms infinite;
+  -moz-animation: glowing 1500ms infinite;
+  -o-animation: glowing 1500ms infinite;
+  animation: glowing 1500ms infinite;
+}
+@-webkit-keyframes glowing {
+  0% { background-color: #68BC36; -webkit-box-shadow: 0 0 3px #68BC36; }
+  50% { background-color: #00FF00; -webkit-box-shadow: 0 0 40px #00FF00; }
+  100% { background-color: #68BC36; -webkit-box-shadow: 0 0 3px #68BC36; }
+}
+
+@-moz-keyframes glowing {
+  0% { background-color: #68BC36; -moz-box-shadow: 0 0 3px #68BC36; }
+  50% { background-color: #00FF00; -moz-box-shadow: 0 0 40px #00FF00; }
+  100% { background-color: #68BC36; -moz-box-shadow: 0 0 3px #68BC36; }
+}
+
+@-o-keyframes glowing {
+  0% { background-color: #68BC36; box-shadow: 0 0 3px #68BC36; }
+  50% { background-color: #00FF00; box-shadow: 0 0 40px #00FF00; }
+  100% { background-color: #B20000; box-shadow: 0 0 3px #B20000; }
+}
+
+@keyframes glowing {
+  0% { background-color: #68BC36; box-shadow: 0 0 3px #68BC36; }
+  50% { background-color: #00FF00; box-shadow: 0 0 40px #00FF00; }
+  100% { background-color: #68BC36; box-shadow: 0 0 3px #68BC36; }
+}
 body { text-align: center;background: #fce1b2;}
 img { width: 450px;border-radius: 80px;}
 input { border: 2px solid whitesmoke;border-radius: 20px; padding: 12px 10px; text-align: center; width: 250px;}
